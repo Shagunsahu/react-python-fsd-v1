@@ -31,7 +31,7 @@ A full-stack development boilerplate for GUVI Hackathon participants, featuring 
 - npm or yarn package manager
 
 ### For Backend Development
-- Python 3.x
+- Python 3.11
   - Windows: Download from [Python website](https://www.python.org/downloads/)
   - macOS: Install via `brew install python@3.11` or download from Python website
   - Linux: Install via package manager (e.g., `sudo apt-get install python3.11`)
@@ -127,7 +127,7 @@ python -m venv venv
 .\venv\Scripts\activate
 
 # macOS/Linux
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 
 # 2. Install dependencies

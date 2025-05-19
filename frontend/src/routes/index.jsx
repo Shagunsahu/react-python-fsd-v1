@@ -1,21 +1,17 @@
-import { createBrowserRouter } from 'react-router-dom';
-import Home from '../pages/Home';
-import NotFound from '../pages/NotFound';
-import Layout from '../components/Layout';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
+import UploadPage from "../pages/UploadPage";
 
-export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: '*',
-        element: <NotFound />,
-      },
-    ],
-  },
-]); 
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/upload" element={<UploadPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default Router;
