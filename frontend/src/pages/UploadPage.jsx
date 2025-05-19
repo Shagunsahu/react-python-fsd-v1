@@ -8,7 +8,7 @@ const UploadPage = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
- const UPLOAD_API_URL = "http://localhost:3001/api/upload-resume";
+ const UPLOAD_API_URL = "http://localhost:8000/api/upload-resume";
 
 
   const handleFileChange = (e) => {
